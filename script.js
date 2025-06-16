@@ -1,160 +1,206 @@
-// Product data with enhanced information
+// Enhanced Product data for Research Chemicals
 const products = [
   {
-    id: "p1",
-    name: "Minimal Desk Lamp",
+    id: "rc1",
+    name: "4-MMC (Mephedrone)",
     description:
-      "Eine elegante und moderne Schreibtischlampe mit einstellbarer Helligkeit und Farbtemperatur. Perfekt für produktives Arbeiten.",
+      "Hochreines 4-Methylmethcatinon für wissenschaftliche Forschung. Laborgeprüfte Qualität mit Analysezertifikat. Nur für Forschungszwecke.",
     price: 89,
-    image:
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Lighting",
-    rating: 4.5,
-    reviews: 23,
-    stock: 15,
-    inStock: true,
-  },
-  {
-    id: "p2",
-    name: "Ceramic Coffee Set",
-    description:
-      "Handgefertigtes Keramik-Kaffee-Set mit 4 Tassen und passendem Pour-Over-Dripper. Für den perfekten Kaffeegenuss.",
-    price: 65,
-    image:
-      "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Kitchenware",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&auto=format&fit=crop&q=60",
+    category: "Stimulants",
     rating: 4.8,
-    reviews: 41,
-    stock: 8,
-    inStock: true,
-  },
-  {
-    id: "p3",
-    name: "Linen Throw Pillow",
-    description: "Weiches Leinen-Dekokissen mit minimalistischem Musterdesign. Bringt Gemütlichkeit in jeden Raum.",
-    price: 45,
-    image:
-      "https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Home Decor",
-    rating: 4.2,
-    reviews: 18,
-    stock: 25,
-    inStock: true,
-  },
-  {
-    id: "p4",
-    name: "Wooden Wall Clock",
-    description: "Moderne Holz-Wanduhr mit leisem Uhrwerk. Zeitloses Design trifft auf Funktionalität.",
-    price: 79,
-    image:
-      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Home Decor",
-    rating: 4.6,
-    reviews: 32,
+    reviews: 34,
     stock: 12,
     inStock: true,
+    purity: "99.2%",
+    cas: "1189805-46-6",
   },
   {
-    id: "p5",
-    name: "Concrete Planter",
-    description: "Minimalistischer Beton-Pflanztopf perfekt für Sukkulenten. Industrielles Design für moderne Räume.",
-    price: 34,
-    image:
-      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Plants",
-    rating: 4.3,
+    id: "rc2",
+    name: "2C-B-FLY",
+    description:
+      "Seltenes Phenethylamin-Derivat für psychedelische Forschung. Höchste Reinheit und Qualität garantiert.",
+    price: 145,
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop&q=60",
+    category: "Psychedelics",
+    rating: 4.9,
+    reviews: 18,
+    stock: 8,
+    inStock: true,
+    purity: "98.7%",
+    cas: "178557-21-6",
+  },
+  {
+    id: "rc3",
+    name: "3-MeO-PCP",
+    description: "Dissoziatives Arylcyclohexylamin für Bewusstseinsforschung. Präzise dosiert und laboranalysiert.",
+    price: 95,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60",
+    category: "Dissociatives",
+    rating: 4.6,
     reviews: 27,
+    stock: 15,
+    inStock: true,
+    purity: "99.1%",
+    cas: "91164-58-8",
+  },
+  {
+    id: "rc4",
+    name: "5F-MDMB-2201",
+    description: "Synthetisches Cannabinoid für Rezeptorforschung. Hochpotent und rein für wissenschaftliche Studien.",
+    price: 120,
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&auto=format&fit=crop&q=60",
+    category: "Cannabinoids",
+    rating: 4.4,
+    reviews: 22,
+    stock: 6,
+    inStock: true,
+    purity: "98.9%",
+    cas: "1971007-88-1",
+  },
+  {
+    id: "rc5",
+    name: "1P-LSD",
+    description: "Lysergamid-Analogon für psychedelische Forschung. Stabile Formulierung mit garantierter Potenz.",
+    price: 180,
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format&fit=crop&q=60",
+    category: "Psychedelics",
+    rating: 4.9,
+    reviews: 41,
     stock: 0,
     inStock: false,
+    purity: "99.5%",
+    cas: "2349358-81-0",
   },
   {
-    id: "p6",
-    name: "Glass Vase Set",
-    description: "Set aus 3 minimalistischen Glasvasen in verschiedenen Größen. Perfekt für frische Blumen.",
-    price: 55,
-    image:
-      "https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Home Decor",
-    rating: 4.7,
-    reviews: 35,
-    stock: 18,
-    inStock: true,
-  },
-  {
-    id: "p7",
-    name: "Bamboo Organizer",
-    description: "Schreibtisch-Organizer aus nachhaltigem Bambus. Ordnung und Nachhaltigkeit vereint.",
-    price: 42,
-    image:
-      "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Office",
-    rating: 4.4,
-    reviews: 19,
-    stock: 22,
-    inStock: true,
-  },
-  {
-    id: "p9",
-    name: "Marble Coasters",
-    description: "Set aus 4 Marmor-Untersetzern mit Kork-Rückseite. Eleganter Schutz für Ihre Möbel.",
-    price: 38,
-    image:
-      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Kitchenware",
-    rating: 4.1,
-    reviews: 14,
-    stock: 30,
-    inStock: true,
-  },
-  {
-    id: "p10",
-    name: "Brass Bookends",
-    description: "Moderne geometrische Messing-Buchstützen, 2er-Set. Funktional und dekorativ zugleich.",
-    price: 68,
-    image: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Office",
+    id: "rc6",
+    name: "3-CMC",
+    description: "Cathinon-Derivat für neurochemische Forschung. Hohe Reinheit und konsistente Qualität.",
+    price: 75,
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&auto=format&fit=crop&q=60",
+    category: "Stimulants",
     rating: 4.5,
-    reviews: 21,
+    reviews: 29,
+    stock: 20,
+    inStock: true,
+    purity: "98.8%",
+    cas: "1607439-32-6",
+  },
+  {
+    id: "rc7",
+    name: "O-DSMT",
+    description: "Opioid-Metabolit für Schmerzforschung. Pharmazeutische Qualität mit vollständiger Dokumentation.",
+    price: 110,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60",
+    category: "Dissociatives",
+    rating: 4.7,
+    reviews: 16,
     stock: 9,
     inStock: true,
+    purity: "99.3%",
+    cas: "73986-53-5",
   },
   {
-    id: "p11",
-    name: "Ceramic Plant Pot",
-    description: "Handgefertigter Keramik-Pflanztopf mit Drainageloch. Ideal für Zimmerpflanzen aller Art.",
-    price: 48,
-    image:
-      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Plants",
-    rating: 4.6,
-    reviews: 28,
-    stock: 16,
+    id: "rc8",
+    name: "4-AcO-DMT",
+    description: "Psilocybin-Analogon für Tryptamin-Forschung. Stabil und hochrein für präzise Studien.",
+    price: 135,
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop&q=60",
+    category: "Psychedelics",
+    rating: 4.8,
+    reviews: 33,
+    stock: 11,
     inStock: true,
+    purity: "99.0%",
+    cas: "92292-84-7",
   },
   {
-    id: "p12",
-    name: "Wall Mirror",
-    description: "Runder Wandspiegel mit minimalem Metallrahmen. Vergrößert optisch jeden Raum.",
-    price: 120,
-    image:
-      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "Home Decor",
-    rating: 4.9,
-    reviews: 52,
+    id: "rc9",
+    name: "NEP (N-Ethylpentedrone)",
+    description: "Cathinon-Stimulans für pharmakologische Forschung. Laborgeprüfte Reinheit und Identität.",
+    price: 85,
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&auto=format&fit=crop&q=60",
+    category: "Stimulants",
+    rating: 4.3,
+    reviews: 25,
+    stock: 18,
+    inStock: true,
+    purity: "98.6%",
+    cas: "18268-16-1",
+  },
+  {
+    id: "rc10",
+    name: "5-MeO-MiPT",
+    description: "Tryptamin-Derivat für Serotoninrezeptor-Forschung. Hochrein und stabil gelagert.",
+    price: 125,
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop&q=60",
+    category: "Psychedelics",
+    rating: 4.6,
+    reviews: 19,
     stock: 7,
     inStock: true,
+    purity: "98.9%",
+    cas: "96096-55-8",
+  },
+  {
+    id: "rc11",
+    name: "JWH-018",
+    description: "Klassisches synthetisches Cannabinoid für CB1/CB2-Rezeptorforschung. Referenzstandard-Qualität.",
+    price: 95,
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&auto=format&fit=crop&q=60",
+    category: "Cannabinoids",
+    rating: 4.5,
+    reviews: 31,
+    stock: 14,
+    inStock: true,
+    purity: "99.1%",
+    cas: "209414-07-3",
+  },
+  {
+    id: "rc12",
+    name: "2-FDCK",
+    description: "Fluoriertes Ketamin-Analogon für dissoziative Forschung. Hohe Potenz und Reinheit.",
+    price: 105,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60",
+    category: "Dissociatives",
+    rating: 4.7,
+    reviews: 24,
+    stock: 10,
+    inStock: true,
+    purity: "98.8%",
+    cas: "111982-50-4",
   },
 ]
 
-// Sample reviews data
+// Enhanced reviews data
 const reviewsData = {
-  p1: [
-    { name: "Anna M.", rating: 5, comment: "Perfekte Beleuchtung für meinen Arbeitsplatz!", date: "2024-01-15" },
-    { name: "Thomas K.", rating: 4, comment: "Sehr gute Qualität, schnelle Lieferung.", date: "2024-01-10" },
+  rc1: [
+    {
+      name: "Dr. Schmidt",
+      rating: 5,
+      comment: "Exzellente Qualität für unsere neurochemischen Studien. Analysezertifikat stimmt perfekt überein.",
+      date: "2024-01-15",
+    },
+    {
+      name: "Research Lab M.",
+      rating: 5,
+      comment: "Sehr zuverlässiger Lieferant. Diskrete Verpackung und schnelle Lieferung.",
+      date: "2024-01-10",
+    },
   ],
-  p2: [
-    { name: "Sarah L.", rating: 5, comment: "Wunderschönes Set, der Kaffee schmeckt fantastisch!", date: "2024-01-12" },
-    { name: "Michael R.", rating: 5, comment: "Hochwertige Verarbeitung, sehr zufrieden.", date: "2024-01-08" },
+  rc2: [
+    {
+      name: "Prof. Weber",
+      rating: 5,
+      comment: "Seltene Substanz in hervorragender Qualität. Perfekt für unsere Rezeptorbindungsstudien.",
+      date: "2024-01-12",
+    },
+    {
+      name: "Institut XY",
+      rating: 4,
+      comment: "Gute Qualität, aber etwas teuer. Dennoch empfehlenswert für Forschung.",
+      date: "2024-01-08",
+    },
   ],
 }
 
@@ -165,7 +211,7 @@ let selectedProduct = null
 let searchQuery = ""
 let selectedCategory = "All"
 let isSearchOpen = false
-let currentView = "hero" // "hero", "products", "checkout"
+let currentView = "hero"
 let currentUser = null
 let currentCheckoutStep = 1
 let sortBy = "default"
@@ -198,9 +244,53 @@ document.addEventListener("DOMContentLoaded", () => {
   setupLiveChat()
   loadUserData()
   showHeroSection()
+  setupEnhancedAnimations()
 })
 
-// Cookie Banner
+// Enhanced animations setup
+function setupEnhancedAnimations() {
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fade-in")
+      }
+    })
+  }, observerOptions)
+
+  // Observe elements for animation
+  document.querySelectorAll(".product-card, .trust-indicator, .feature-card").forEach((el) => {
+    observer.observe(el)
+  })
+
+  // Enhanced hover effects for product cards
+  setupProductCardAnimations()
+}
+
+function setupProductCardAnimations() {
+  document.addEventListener("mouseover", (e) => {
+    if (e.target.closest(".product-card")) {
+      const card = e.target.closest(".product-card")
+      card.style.transform = "translateY(-8px) scale(1.03)"
+      card.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.15)"
+    }
+  })
+
+  document.addEventListener("mouseout", (e) => {
+    if (e.target.closest(".product-card")) {
+      const card = e.target.closest(".product-card")
+      card.style.transform = "translateY(0) scale(1)"
+      card.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)"
+    }
+  })
+}
+
+// Enhanced Cookie Banner
 function setupCookieBanner() {
   const cookieBanner = document.getElementById("cookieBanner")
   const acceptCookies = document.getElementById("acceptCookies")
@@ -208,32 +298,36 @@ function setupCookieBanner() {
 
   if (!localStorage.getItem("cookiesAccepted")) {
     setTimeout(() => {
-      cookieBanner.classList.add("cookie-banner-show")
-    }, 2000)
+      cookieBanner.classList.remove("translate-y-full")
+      cookieBanner.classList.add("animate-slide-up")
+    }, 3000)
   }
 
   acceptCookies.addEventListener("click", () => {
     localStorage.setItem("cookiesAccepted", "true")
-    cookieBanner.classList.remove("cookie-banner-show")
+    cookieBanner.classList.add("translate-y-full")
+    showToast("🍪 Cookie-Einstellungen gespeichert", "success")
   })
 
   cookieSettings.addEventListener("click", () => {
-    showToast("Cookie-Einstellungen werden in Kürze verfügbar sein.", "info")
+    showToast("⚙️ Cookie-Einstellungen werden in Kürze verfügbar sein.", "info")
   })
 }
 
-// Back to Top Button
+// Enhanced Back to Top Button
 function setupBackToTop() {
   const backToTop = document.getElementById("backToTop")
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 500) {
       backToTop.classList.remove("hidden")
-      backToTop.classList.add("back-to-top-show")
+      backToTop.style.opacity = "1"
+      backToTop.style.transform = "translateY(0) scale(1)"
     } else {
-      backToTop.classList.add("back-to-top-hide")
+      backToTop.style.opacity = "0"
+      backToTop.style.transform = "translateY(20px) scale(0.8)"
       setTimeout(() => {
-        if (window.scrollY <= 300) {
+        if (window.scrollY <= 500) {
           backToTop.classList.add("hidden")
         }
       }, 300)
@@ -241,11 +335,19 @@ function setupBackToTop() {
   })
 
   backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+    // Add bounce animation
+    backToTop.style.animation = "bounce 0.6s ease-out"
+    setTimeout(() => {
+      backToTop.style.animation = ""
+    }, 600)
   })
 }
 
-// Live Chat
+// Enhanced Live Chat
 function setupLiveChat() {
   const chatToggle = document.getElementById("chatToggle")
   const chatWindow = document.getElementById("chatWindow")
@@ -256,19 +358,27 @@ function setupLiveChat() {
 
   chatToggle.addEventListener("click", () => {
     chatWindow.classList.toggle("hidden")
+    if (!chatWindow.classList.contains("hidden")) {
+      chatWindow.style.animation = "slideUp 0.4s ease-out"
+      chatInput.focus()
+    }
   })
 
   chatClose.addEventListener("click", () => {
-    chatWindow.classList.add("hidden")
+    chatWindow.style.animation = "slideDown 0.3s ease-out"
+    setTimeout(() => {
+      chatWindow.classList.add("hidden")
+    }, 300)
   })
 
   function sendMessage(message, isUser = false) {
     const messageDiv = document.createElement("div")
-    messageDiv.className = `flex ${isUser ? "justify-end" : ""} chat-message ${isUser ? "user" : ""}`
+    messageDiv.className = `flex ${isUser ? "justify-end" : ""} chat-message animate-fade-in`
 
     messageDiv.innerHTML = `
-      <div class="bg-${isUser ? "blue-600 text-white" : "zinc-100 dark:bg-zinc-800"} rounded-lg p-3 max-w-xs">
+      <div class="bg-${isUser ? "blue-600 text-white" : "white border border-slate-200"} rounded-2xl p-3 max-w-xs shadow-sm">
         <p class="text-sm">${message}</p>
+        <span class="text-xs opacity-70 mt-1 block">${new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}</span>
       </div>
     `
 
@@ -282,15 +392,32 @@ function setupLiveChat() {
       sendMessage(message, true)
       chatInput.value = ""
 
+      // Show typing indicator
+      const typingDiv = document.createElement("div")
+      typingDiv.className = "flex typing-indicator"
+      typingDiv.innerHTML = `
+        <div class="bg-white border border-slate-200 rounded-2xl p-3 max-w-xs shadow-sm">
+          <div class="flex space-x-1">
+            <div class="w-2 h-2 bg-slate-400 rounded-full animate-bounce"></div>
+            <div class="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+            <div class="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+          </div>
+        </div>
+      `
+      chatMessages.appendChild(typingDiv)
+      chatMessages.scrollTop = chatMessages.scrollHeight
+
       // Simulate bot response
       setTimeout(() => {
+        chatMessages.removeChild(typingDiv)
         const responses = [
-          "Vielen Dank für Ihre Nachricht! Wie kann ich Ihnen helfen?",
-          "Gerne helfe ich Ihnen weiter. Was möchten Sie wissen?",
-          "Haben Sie Fragen zu unseren Produkten oder Ihrer Bestellung?",
+          "🔬 Vielen Dank für Ihre Nachricht! Wie kann ich Ihnen bei Ihrer Forschung helfen?",
+          "📋 Gerne helfe ich Ihnen weiter. Benötigen Sie Informationen zu spezifischen Substanzen?",
+          "🧪 Haben Sie Fragen zu Analysezertifikaten oder Reinheitsgraden?",
+          "📦 Möchten Sie mehr über unsere diskreten Versandoptionen erfahren?",
         ]
         sendMessage(responses[Math.floor(Math.random() * responses.length)])
-      }, 1000)
+      }, 1500)
     }
   })
 
@@ -301,7 +428,7 @@ function setupLiveChat() {
   })
 }
 
-// User Management
+// Enhanced User Management
 function loadUserData() {
   const userData = localStorage.getItem("currentUser")
   if (userData) {
@@ -344,13 +471,18 @@ function updateUserInterface() {
   }
 }
 
-// Navigation functions
+// Enhanced Navigation functions
 function showHeroSection() {
   currentView = "hero"
   heroSection.classList.remove("hidden")
   productSection.classList.add("hidden")
   checkoutSection.classList.add("hidden")
   categoryNav.classList.add("hidden")
+
+  // Trigger hero animations
+  setTimeout(() => {
+    document.querySelector(".hero-content").style.animation = "fadeInUp 1s ease-out"
+  }, 100)
 }
 
 function showProductSection() {
@@ -359,7 +491,9 @@ function showProductSection() {
   productSection.classList.remove("hidden")
   checkoutSection.classList.add("hidden")
   categoryNav.classList.remove("hidden")
-  productSection.classList.add("page-transition")
+
+  // Add page transition animation
+  productSection.style.animation = "fadeIn 0.6s ease-out"
   renderProducts()
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
@@ -370,17 +504,19 @@ function showCheckoutSection() {
   productSection.classList.add("hidden")
   checkoutSection.classList.remove("hidden")
   categoryNav.classList.add("hidden")
+
+  checkoutSection.style.animation = "fadeIn 0.6s ease-out"
   renderCheckoutItems()
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
-// Event listeners
+// Event listeners setup
 function setupEventListeners() {
   // Navigation
   document.getElementById("homeBtn").addEventListener("click", showHeroSection)
   document.getElementById("shopNowBtn").addEventListener("click", showProductSection)
 
-  // Search functionality
+  // Enhanced Search functionality
   document.getElementById("searchToggle").addEventListener("click", toggleSearch)
   document.getElementById("clearSearch").addEventListener("click", clearSearch)
   searchInput.addEventListener("input", handleSearch)
@@ -439,7 +575,7 @@ function setupEventListeners() {
   // Checkout steps
   setupCheckoutListeners()
 
-  // Escape key handling
+  // Enhanced keyboard shortcuts
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       if (!productModal.classList.contains("hidden")) {
@@ -451,6 +587,12 @@ function setupEventListeners() {
       } else if (isSearchOpen) {
         toggleSearch()
       }
+    }
+
+    // Ctrl+K for search
+    if (e.ctrlKey && e.key === "k") {
+      e.preventDefault()
+      toggleSearch()
     }
   })
 
@@ -465,49 +607,73 @@ function setupEventListeners() {
   })
 }
 
-// Authentication Modals
+// Enhanced Authentication Modals
 function setupAuthModals() {
   const loginModal = document.getElementById("loginModal")
   const registerModal = document.getElementById("registerModal")
   const loginForm = document.getElementById("loginForm")
   const registerForm = document.getElementById("registerForm")
 
-  // Modal close buttons
+  // Modal close buttons with animation
   document.getElementById("loginModalClose").addEventListener("click", () => {
-    loginModal.classList.add("hidden")
+    loginModal.style.animation = "fadeOut 0.3s ease-out"
+    setTimeout(() => {
+      loginModal.classList.add("hidden")
+      loginModal.style.animation = ""
+    }, 300)
   })
 
   document.getElementById("registerModalClose").addEventListener("click", () => {
-    registerModal.classList.add("hidden")
+    registerModal.style.animation = "fadeOut 0.3s ease-out"
+    setTimeout(() => {
+      registerModal.classList.add("hidden")
+      registerModal.style.animation = ""
+    }, 300)
   })
 
-  // Switch between modals
+  // Switch between modals with animation
   document.getElementById("switchToRegister").addEventListener("click", () => {
     loginModal.classList.add("hidden")
     registerModal.classList.remove("hidden")
+    registerModal.style.animation = "fadeIn 0.3s ease-out"
   })
 
   document.getElementById("switchToLogin").addEventListener("click", () => {
     registerModal.classList.add("hidden")
     loginModal.classList.remove("hidden")
+    loginModal.style.animation = "fadeIn 0.3s ease-out"
   })
 
-  // Form submissions
+  // Enhanced form submissions
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault()
     const formData = new FormData(loginForm)
     const email = formData.get("email") || loginForm.querySelector('input[type="email"]').value
 
-    // Simulate login
-    currentUser = {
-      name: "Max Mustermann",
-      email: email,
-    }
+    // Show loading state
+    const submitBtn = loginForm.querySelector('button[type="submit"]')
+    const originalText = submitBtn.innerHTML
+    submitBtn.innerHTML = `
+      <svg class="animate-spin w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Anmelden...
+    `
 
-    localStorage.setItem("currentUser", JSON.stringify(currentUser))
-    updateUserInterface()
-    loginModal.classList.add("hidden")
-    showToast("Erfolgreich angemeldet!", "success")
+    // Simulate login
+    setTimeout(() => {
+      currentUser = {
+        name: "Dr. " + email.split("@")[0],
+        email: email,
+      }
+
+      localStorage.setItem("currentUser", JSON.stringify(currentUser))
+      updateUserInterface()
+      loginModal.classList.add("hidden")
+      submitBtn.innerHTML = originalText
+      showToast("🎉 Erfolgreich angemeldet! Willkommen zurück.", "success")
+    }, 1500)
   })
 
   registerForm.addEventListener("submit", (e) => {
@@ -517,30 +683,51 @@ function setupAuthModals() {
     const lastName = registerForm.querySelectorAll('input[type="text"]')[1].value
     const email = registerForm.querySelector('input[type="email"]').value
 
-    // Simulate registration
-    currentUser = {
-      name: `${firstName} ${lastName}`,
-      email: email,
-    }
+    // Show loading state
+    const submitBtn = registerForm.querySelector('button[type="submit"]')
+    const originalText = submitBtn.innerHTML
+    submitBtn.innerHTML = `
+      <svg class="animate-spin w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Registrieren...
+    `
 
-    localStorage.setItem("currentUser", JSON.stringify(currentUser))
-    updateUserInterface()
-    registerModal.classList.add("hidden")
-    showToast("Erfolgreich registriert und angemeldet!", "success")
+    // Simulate registration
+    setTimeout(() => {
+      currentUser = {
+        name: `${firstName} ${lastName}`,
+        email: email,
+      }
+
+      localStorage.setItem("currentUser", JSON.stringify(currentUser))
+      updateUserInterface()
+      registerModal.classList.add("hidden")
+      submitBtn.innerHTML = originalText
+      showToast("🎉 Erfolgreich registriert und angemeldet! Willkommen bei ChemLab Research.", "success")
+    }, 1500)
   })
 }
 
 function openLoginModal() {
-  document.getElementById("loginModal").classList.remove("hidden")
+  const loginModal = document.getElementById("loginModal")
+  loginModal.classList.remove("hidden")
+  loginModal.style.animation = "fadeIn 0.3s ease-out"
 }
 
 function openRegisterModal() {
-  document.getElementById("registerModal").classList.remove("hidden")
+  const registerModal = document.getElementById("registerModal")
+  registerModal.classList.remove("hidden")
+  registerModal.style.animation = "fadeIn 0.3s ease-out"
 }
 
 function toggleUserMenu() {
   const userMenu = document.getElementById("userMenu")
   userMenu.classList.toggle("hidden")
+  if (!userMenu.classList.contains("hidden")) {
+    userMenu.style.animation = "slideUp 0.3s ease-out"
+  }
 }
 
 function logout() {
@@ -548,23 +735,27 @@ function logout() {
   localStorage.removeItem("currentUser")
   updateUserInterface()
   toggleUserMenu()
-  showToast("Erfolgreich abgemeldet!", "success")
+  showToast("👋 Erfolgreich abgemeldet! Auf Wiedersehen.", "success")
 }
 
-// Search functionality
+// Enhanced Search functionality
 function toggleSearch() {
   isSearchOpen = !isSearchOpen
   const searchToggle = document.getElementById("searchToggle")
   const clearSearch = document.getElementById("clearSearch")
 
   if (isSearchOpen) {
-    searchContainer.classList.add("open")
-    searchToggle.classList.add("bg-zinc-100", "dark:bg-zinc-800")
+    searchContainer.classList.add("search-open")
+    searchToggle.classList.add("bg-blue-50", "text-blue-600")
+    searchInput.style.width = window.innerWidth < 640 ? "200px" : "224px"
+    searchInput.style.opacity = "1"
     searchInput.focus()
     clearSearch.classList.remove("hidden")
   } else {
-    searchContainer.classList.remove("open")
-    searchToggle.classList.remove("bg-zinc-100", "dark:bg-zinc-800")
+    searchContainer.classList.remove("search-open")
+    searchToggle.classList.remove("bg-blue-50", "text-blue-600")
+    searchInput.style.width = "0px"
+    searchInput.style.opacity = "0"
     clearSearch.classList.add("hidden")
     searchQuery = ""
     searchInput.value = ""
@@ -593,13 +784,20 @@ function handleSearch(e) {
 function handleSearchKeydown(e) {
   if (e.key === "Escape") {
     toggleSearch()
+  } else if (e.key === "Enter" && searchQuery.trim()) {
+    if (currentView !== "products") {
+      showProductSection()
+    }
   }
 }
 
-// Filter and Sort functionality
+// Enhanced Filter and Sort functionality
 function toggleFilters() {
   const filterPanel = document.getElementById("filterPanel")
   filterPanel.classList.toggle("hidden")
+  if (!filterPanel.classList.contains("hidden")) {
+    filterPanel.style.animation = "slideDown 0.4s ease-out"
+  }
 }
 
 function setupFilterListeners() {
@@ -654,26 +852,29 @@ function clearFilters() {
   activeFilters = { price: [], rating: [], stock: [] }
   document.querySelectorAll('input[type="checkbox"]').forEach((cb) => (cb.checked = false))
   renderProducts()
+  showToast("🔄 Filter zurückgesetzt", "info")
 }
 
-// Category functionality
+// Enhanced Category functionality
 function updateCategoryButtons() {
   document.querySelectorAll(".category-btn").forEach((btn) => {
-    btn.classList.remove("active")
+    btn.classList.remove("text-blue-600", "bg-blue-50", "border-blue-200")
+    btn.classList.add("text-slate-600", "hover:text-blue-600", "hover:bg-blue-50")
+
     if (btn.dataset.category === selectedCategory) {
-      btn.className =
-        "category-btn active whitespace-nowrap transition-colors text-zinc-900 dark:text-white text-sm font-medium"
-    } else {
-      btn.className =
-        "category-btn whitespace-nowrap transition-colors text-zinc-600 dark:text-zinc-400 text-sm hover:text-zinc-900 dark:hover:text-white"
+      btn.classList.remove("text-slate-600", "hover:text-blue-600", "hover:bg-blue-50")
+      btn.classList.add("text-blue-600", "bg-blue-50", "border-blue-200")
     }
   })
 }
 
-// Product rendering
+// Enhanced Product rendering
 function renderProducts() {
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.name.toLowerCase().includes(searchQuery)
+    const matchesSearch =
+      product.name.toLowerCase().includes(searchQuery) ||
+      product.description.toLowerCase().includes(searchQuery) ||
+      product.cas.includes(searchQuery)
     const matchesCategory = selectedCategory === "All" || product.category === selectedCategory
 
     // Price filter
@@ -714,58 +915,103 @@ function renderProducts() {
   }
 
   // Update product count
-  document.getElementById("productCount").textContent = `${filteredProducts.length} Produkte`
+  document.getElementById("productCount").textContent = `${filteredProducts.length} Substanzen`
 
-  productGrid.innerHTML = filteredProducts
+  // Show loading skeleton first
+  productGrid.innerHTML = Array(12)
+    .fill(0)
     .map(
-      (product) => `
-      <div class="product-card group cursor-pointer" data-product-id="${product.id}">
-          <div class="relative aspect-[4/5] bg-white dark:bg-zinc-900 rounded-md overflow-hidden">
-              <img
-                  src="${product.image}"
-                  alt="${product.name}"
-                  class="product-image w-full h-full object-cover object-center"
-              />
-              ${!product.inStock ? '<div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"><span class="text-white text-sm font-medium">Ausverkauft</span></div>' : ""}
-              <button 
-                  class="wishlist-btn absolute top-2 right-2 p-1.5 bg-white/80 dark:bg-black/50 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-white/90 dark:hover:bg-black/60"
-                  data-product-id="${product.id}"
-                  onclick="event.stopPropagation(); toggleWishlist('${product.id}')"
-              >
-                  <svg class="w-4 h-4 ${wishlist.some((item) => item.id === product.id) ? "fill-red-500 text-red-500" : "text-zinc-600 dark:text-zinc-400"}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                  </svg>
-              </button>
-          </div>
-          <div class="mt-2 space-y-1">
-              <h3 class="text-sm font-medium truncate">${product.name}</h3>
-              <div class="flex items-center gap-1">
-                  ${generateStarRating(product.rating)}
-                  <span class="text-xs text-zinc-500 dark:text-zinc-400">(${product.reviews})</span>
-              </div>
-              <div class="flex justify-between items-center">
-                  <p class="text-sm font-semibold">€${product.price}</p>
-                  <p class="text-xs text-zinc-400 dark:text-zinc-500">${getCategoryName(product.category)}</p>
-              </div>
-              ${
-                product.inStock
-                  ? `<p class="text-xs text-green-600">Auf Lager (${product.stock})</p>`
-                  : '<p class="text-xs text-red-600">Ausverkauft</p>'
-              }
-          </div>
-      </div>
-    `,
+      () => `
+    <div class="animate-pulse">
+      <div class="aspect-[4/5] bg-slate-200 rounded-xl mb-3"></div>
+      <div class="h-4 bg-slate-200 rounded mb-2"></div>
+      <div class="h-3 bg-slate-200 rounded w-3/4 mb-2"></div>
+      <div class="h-4 bg-slate-200 rounded w-1/2"></div>
+    </div>
+  `,
     )
     .join("")
 
-  // Add click listeners to product cards
-  document.querySelectorAll(".product-card").forEach((card) => {
-    card.addEventListener("click", (e) => {
-      const productId = e.currentTarget.dataset.productId
-      const product = products.find((p) => p.id === productId)
-      openProductModal(product)
+  // Render actual products after short delay
+  setTimeout(() => {
+    productGrid.innerHTML = filteredProducts
+      .map(
+        (product) => `
+        <div class="product-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100" data-product-id="${product.id}">
+            <div class="relative aspect-[4/5] bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden">
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    class="product-image w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                />
+                ${
+                  !product.inStock
+                    ? '<div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center"><span class="text-white text-sm font-semibold bg-red-500 px-3 py-1 rounded-full">Ausverkauft</span></div>'
+                    : '<div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">' +
+                      product.purity +
+                      "</div>"
+                }
+                <button 
+                    class="wishlist-btn absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110 shadow-lg"
+                    data-product-id="${product.id}"
+                    onclick="event.stopPropagation(); toggleWishlist('${product.id}')"
+                >
+                    <svg class="w-4 h-4 ${wishlist.some((item) => item.id === product.id) ? "fill-red-500 text-red-500" : "text-slate-600"}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </button>
+                ${
+                  product.inStock
+                    ? `<button 
+                      class="add-to-cart-btn absolute bottom-3 left-3 right-3 py-2 bg-blue-600 text-white rounded-xl font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-blue-700 transform translate-y-2 group-hover:translate-y-0"
+                      onclick="event.stopPropagation(); addToCart(products.find(p => p.id === '${product.id}'))"
+                  >
+                      <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                      </svg>
+                      In den Warenkorb
+                  </button>`
+                    : ""
+                }
+            </div>
+            <div class="p-4 space-y-2">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-sm font-semibold text-slate-900 line-clamp-2 leading-tight">${product.name}</h3>
+                    <span class="text-lg font-bold text-blue-600 ml-2">€${product.price}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    ${generateStarRating(product.rating)}
+                    <span class="text-xs text-slate-500">(${product.reviews})</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 bg-slate-100 px-2 py-1 rounded-full">${getCategoryName(product.category)}</span>
+                    <span class="text-slate-400">CAS: ${product.cas}</span>
+                </div>
+                ${
+                  product.inStock
+                    ? `<div class="flex items-center gap-1 text-xs text-green-600">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Auf Lager (${product.stock})
+                      </div>`
+                    : '<div class="flex items-center gap-1 text-xs text-red-600"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Ausverkauft</div>'
+                }
+            </div>
+        </div>
+      `,
+      )
+      .join("")
+
+    // Add click listeners to product cards
+    document.querySelectorAll(".product-card").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        const productId = e.currentTarget.dataset.productId
+        const product = products.find((p) => p.id === productId)
+        openProductModal(product)
+      })
     })
-  })
+  }, 300)
 }
 
 function generateStarRating(rating) {
@@ -790,7 +1036,7 @@ function generateStarRating(rating) {
   // Empty stars
   for (let i = 0; i < emptyStars; i++) {
     stars +=
-      '<svg class="w-3 h-3 text-zinc-300 dark:text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>'
+      '<svg class="w-3 h-3 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>'
   }
 
   return `<div class="flex items-center">${stars}</div>`
@@ -798,16 +1044,15 @@ function generateStarRating(rating) {
 
 function getCategoryName(category) {
   const categoryNames = {
-    Lighting: "Beleuchtung",
-    Kitchenware: "Küche",
-    "Home Decor": "Deko",
-    Plants: "Pflanzen",
-    Office: "Büro",
+    Stimulants: "Stimulanzien",
+    Psychedelics: "Psychedelika",
+    Dissociatives: "Dissoziativa",
+    Cannabinoids: "Cannabinoide",
   }
   return categoryNames[category] || category
 }
 
-// Modal functionality
+// Enhanced Modal functionality
 function openProductModal(product) {
   selectedProduct = product
 
@@ -817,13 +1062,13 @@ function openProductModal(product) {
   document.getElementById("modalCategory").textContent = getCategoryName(product.category)
   document.getElementById("modalPrice").textContent = `€${product.price}`
   document.getElementById("modalDescription").textContent = product.description
-  document.getElementById("modalSku").textContent = `SKU: ${product.id}`
+  document.getElementById("modalSku").textContent = `CAS: ${product.cas} | Reinheit: ${product.purity}`
   document.getElementById("modalStock").textContent = product.inStock ? `Auf Lager (${product.stock})` : "Ausverkauft"
 
   // Rating
   document.getElementById("modalRating").innerHTML = `
     ${generateStarRating(product.rating)}
-    <span class="text-sm text-zinc-500 dark:text-zinc-400 ml-1">${product.rating} (${product.reviews} Bewertungen)</span>
+    <span class="text-sm text-slate-500 ml-2">${product.rating} (${product.reviews} Bewertungen)</span>
   `
 
   // Reviews
@@ -832,33 +1077,35 @@ function openProductModal(product) {
     .slice(0, 2)
     .map(
       (review) => `
-    <div class="border-b border-zinc-200 dark:border-zinc-800 pb-2 last:border-b-0">
-      <div class="flex items-center justify-between mb-1">
-        <span class="text-sm font-medium">${review.name}</span>
+    <div class="border-b border-slate-200 pb-3 last:border-b-0">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-sm font-semibold text-slate-900">${review.name}</span>
         <div class="flex items-center">
           ${generateStarRating(review.rating)}
         </div>
       </div>
-      <p class="text-sm text-zinc-600 dark:text-zinc-400">${review.comment}</p>
+      <p class="text-sm text-slate-600 leading-relaxed">${review.comment}</p>
+      <span class="text-xs text-slate-400 mt-1">${new Date(review.date).toLocaleDateString("de-DE")}</span>
     </div>
   `,
     )
     .join("")
 
   productModal.classList.remove("hidden")
+  productModal.style.animation = "fadeIn 0.4s ease-out"
   document.body.style.overflow = "hidden"
 }
 
 function closeModal() {
   const modalContent = document.querySelector(".modal-content")
-  modalContent.classList.add("closing")
+  modalContent.style.animation = "slideDown 0.4s ease-out"
 
   setTimeout(() => {
     productModal.classList.add("hidden")
-    modalContent.classList.remove("closing")
+    modalContent.style.animation = ""
     document.body.style.overflow = "auto"
     selectedProduct = null
-  }, 300)
+  }, 400)
 }
 
 function addToCartFromModal() {
@@ -870,9 +1117,9 @@ function addToCartFromModal() {
 
     setTimeout(() => {
       openCart()
-    }, 500)
+    }, 800)
   } else {
-    showToast("Produkt ist nicht verfügbar", "error")
+    showToast("⚠️ Produkt ist nicht verfügbar", "error")
   }
 }
 
@@ -882,17 +1129,17 @@ function addToWishlistFromModal() {
   }
 }
 
-// Wishlist functionality
+// Enhanced Wishlist functionality
 function toggleWishlist(productId) {
   const product = products.find((p) => p.id === productId)
   const existingIndex = wishlist.findIndex((item) => item.id === productId)
 
   if (existingIndex > -1) {
     wishlist.splice(existingIndex, 1)
-    showToast("Aus Wunschliste entfernt", "info")
+    showToast("💔 Aus Wunschliste entfernt", "info")
   } else {
     wishlist.push(product)
-    showToast("Zur Wunschliste hinzugefügt", "success")
+    showToast("❤️ Zur Wunschliste hinzugefügt", "success")
   }
 
   updateWishlistBadge()
@@ -903,7 +1150,7 @@ function toggleWishlist(productId) {
     const modalWishlistBtn = document.getElementById("modalAddToWishlist")
     const isInWishlist = wishlist.some((item) => item.id === productId)
     modalWishlistBtn.innerHTML = `
-      <svg class="w-4 h-4 inline mr-1 ${isInWishlist ? "fill-red-500 text-red-500" : ""}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-5 h-5 ${isInWishlist ? "fill-red-500 text-red-500" : ""}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
       </svg>
       ${isInWishlist ? "Entfernen" : "Merken"}
@@ -919,38 +1166,47 @@ function toggleWishlist(productId) {
 function openWishlist() {
   renderWishlistItems()
   wishlistDrawer.classList.remove("hidden")
+  wishlistDrawer.style.animation = "slideInRight 0.4s ease-out"
   document.body.style.overflow = "hidden"
 }
 
 function closeWishlist() {
   const wishlistContent = document.querySelector(".wishlist-content")
-  wishlistContent.classList.add("closing")
+  wishlistContent.style.animation = "slideOutRight 0.4s ease-out"
 
   setTimeout(() => {
     wishlistDrawer.classList.add("hidden")
-    wishlistContent.classList.remove("closing")
+    wishlistContent.style.animation = ""
     document.body.style.overflow = "auto"
-  }, 300)
+  }, 400)
 }
 
 function renderWishlistItems() {
   const wishlistItems = document.getElementById("wishlistItems")
 
   if (wishlist.length === 0) {
-    wishlistItems.innerHTML = '<p class="text-center text-zinc-500 dark:text-zinc-400">Ihre Wunschliste ist leer</p>'
+    wishlistItems.innerHTML = `
+      <div class="text-center py-12">
+        <svg class="w-16 h-16 text-slate-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+        <p class="text-slate-500">Ihre Wunschliste ist leer</p>
+        <p class="text-sm text-slate-400 mt-1">Fügen Sie Produkte hinzu, die Sie interessieren</p>
+      </div>
+    `
     return
   }
 
   wishlistItems.innerHTML = wishlist
     .map(
       (item) => `
-      <div class="wishlist-item flex gap-4 p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg" data-wishlist-id="${item.id}">
-          <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-md" />
+      <div class="wishlist-item flex gap-4 p-4 bg-gradient-to-r from-slate-50 to-red-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-all duration-300" data-wishlist-id="${item.id}">
+          <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-xl shadow-sm" />
           <div class="flex-1 min-w-0">
               <div class="flex justify-between items-start">
-                  <h3 class="text-sm font-medium truncate">${item.name}</h3>
+                  <h3 class="text-sm font-semibold text-slate-900 line-clamp-2">${item.name}</h3>
                   <button
-                      class="remove-wishlist-item p-1.5 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-full ml-2 transition-colors"
+                      class="remove-wishlist-item p-2 hover:bg-red-100 rounded-full ml-2 transition-all duration-300 hover:scale-110 text-red-500"
                       data-product-id="${item.id}"
                   >
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -958,14 +1214,18 @@ function renderWishlistItems() {
                       </svg>
                   </button>
               </div>
-              <p class="text-sm font-medium mt-1">€${item.price}</p>
-              <div class="flex gap-2 mt-2">
+              <p class="text-lg font-bold text-blue-600 mt-1">€${item.price}</p>
+              <div class="flex items-center gap-1 text-xs text-slate-500 mt-1">
+                <span class="bg-slate-100 px-2 py-1 rounded-full">${item.purity}</span>
+                <span>CAS: ${item.cas}</span>
+              </div>
+              <div class="flex gap-2 mt-3">
                   <button 
-                      class="add-to-cart-from-wishlist px-3 py-1 text-xs bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
+                      class="add-to-cart-from-wishlist flex-1 px-4 py-2 text-sm bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-sm"
                       data-product-id="${item.id}"
                       ${!item.inStock ? "disabled" : ""}
                   >
-                      ${item.inStock ? "In den Warenkorb" : "Ausverkauft"}
+                      ${item.inStock ? "🛒 In den Warenkorb" : "❌ Ausverkauft"}
                   </button>
               </div>
           </div>
@@ -989,7 +1249,7 @@ function renderWishlistItems() {
       const product = products.find((p) => p.id === productId)
       if (product && product.inStock) {
         addToCart(product)
-        showToast("Zum Warenkorb hinzugefügt", "success")
+        showToast("🛒 Zum Warenkorb hinzugefügt", "success")
       }
     })
   })
@@ -1008,10 +1268,10 @@ function saveWishlist() {
   localStorage.setItem("wishlist", JSON.stringify(wishlist))
 }
 
-// Cart functionality
+// Enhanced Cart functionality
 function addToCart(product, quantity = 1) {
   if (!product.inStock) {
-    showToast("Produkt ist nicht verfügbar", "error")
+    showToast("⚠️ Produkt ist nicht verfügbar", "error")
     return
   }
 
@@ -1019,26 +1279,28 @@ function addToCart(product, quantity = 1) {
 
   if (existingItem) {
     existingItem.quantity += quantity
+    showToast(`📦 Menge erhöht: ${product.name} (${existingItem.quantity}x)`, "success")
   } else {
     cart.push({ ...product, quantity })
+    showToast(`✅ Hinzugefügt: ${product.name}`, "success")
   }
 
   updateCartBadge()
   animateCartBadge()
   saveCart()
-  showToast("Zum Warenkorb hinzugefügt", "success")
 }
 
 function removeFromCart(productId) {
   const cartItem = document.querySelector(`[data-cart-id="${productId}"]`)
   if (cartItem) {
-    cartItem.classList.add("removing")
+    cartItem.style.animation = "slideOutLeft 0.4s ease-out"
     setTimeout(() => {
       cart = cart.filter((item) => item.id !== productId)
       updateCartBadge()
       renderCartItems()
       saveCart()
-    }, 300)
+      showToast("🗑️ Produkt entfernt", "info")
+    }, 400)
   }
 }
 
@@ -1069,9 +1331,9 @@ function updateCartBadge() {
 
 function animateCartBadge() {
   const cartToggle = document.getElementById("cartToggle")
-  cartToggle.classList.add("cart-bounce")
+  cartToggle.style.animation = "bounce 0.6s ease-out"
   setTimeout(() => {
-    cartToggle.classList.remove("cart-bounce")
+    cartToggle.style.animation = ""
   }, 600)
 }
 
@@ -1079,8 +1341,8 @@ function animateAddToCart(sourceElement, product) {
   const rect = sourceElement.getBoundingClientRect()
   const cartRect = document.getElementById("cartToggle").getBoundingClientRect()
 
-  addToCartAnimation.style.left = rect.left + rect.width / 2 - 16 + "px"
-  addToCartAnimation.style.top = rect.top + rect.height / 2 - 16 + "px"
+  addToCartAnimation.style.left = rect.left + rect.width / 2 - 20 + "px"
+  addToCartAnimation.style.top = rect.top + rect.height / 2 - 20 + "px"
   addToCartAnimation.classList.remove("hidden")
 
   // Animate to cart
@@ -1094,24 +1356,25 @@ function animateAddToCart(sourceElement, product) {
     addToCartAnimation.classList.add("hidden")
     addToCartAnimation.style.transform = ""
     addToCartAnimation.style.opacity = "1"
-  }, 1000)
+  }, 1200)
 }
 
 function openCart() {
   renderCartItems()
   cartDrawer.classList.remove("hidden")
+  cartDrawer.style.animation = "slideInRight 0.4s ease-out"
   document.body.style.overflow = "hidden"
 }
 
 function closeCart() {
   const cartContent = document.querySelector(".cart-content")
-  cartContent.classList.add("closing")
+  cartContent.style.animation = "slideOutRight 0.4s ease-out"
 
   setTimeout(() => {
     cartDrawer.classList.add("hidden")
-    cartContent.classList.remove("closing")
+    cartContent.style.animation = ""
     document.body.style.overflow = "auto"
-  }, 300)
+  }, 400)
 }
 
 function renderCartItems() {
@@ -1121,7 +1384,15 @@ function renderCartItems() {
   const cartTotalInline = document.getElementById("cartTotalInline")
 
   if (cart.length === 0) {
-    cartItems.innerHTML = '<p class="text-center text-zinc-500 dark:text-zinc-400">Ihr Warenkorb ist leer</p>'
+    cartItems.innerHTML = `
+      <div class="text-center py-12">
+        <svg class="w-16 h-16 text-slate-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path>
+        </svg>
+        <p class="text-slate-500">Ihr Warenkorb ist leer</p>
+        <p class="text-sm text-slate-400 mt-1">Fügen Sie Produkte hinzu, um zu beginnen</p>
+      </div>
+    `
     cartSubtotal.textContent = "€0"
     cartTotal.textContent = "€0"
     cartTotalInline.textContent = "0"
@@ -1129,19 +1400,19 @@ function renderCartItems() {
   }
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
-  const shipping = subtotal >= 50 ? 0 : 4.99
+  const shipping = subtotal >= 100 ? 0 : 9.99
   const total = subtotal + shipping
 
   cartItems.innerHTML = cart
     .map(
       (item) => `
-      <div class="cart-item flex gap-4 p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg" data-cart-id="${item.id}">
-          <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-md" />
+      <div class="cart-item flex gap-4 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-all duration-300" data-cart-id="${item.id}">
+          <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-xl shadow-sm" />
           <div class="flex-1 min-w-0">
               <div class="flex justify-between items-start">
-                  <h3 class="text-sm font-medium truncate">${item.name}</h3>
+                  <h3 class="text-sm font-semibold text-slate-900 line-clamp-2">${item.name}</h3>
                   <button
-                      class="remove-item p-1.5 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-full ml-2 transition-colors"
+                      class="remove-item p-2 hover:bg-red-100 rounded-full ml-2 transition-all duration-300 hover:scale-110 text-red-500"
                       data-product-id="${item.id}"
                   >
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1149,21 +1420,25 @@ function renderCartItems() {
                       </svg>
                   </button>
               </div>
-              <div class="flex items-center justify-between mt-2">
-                  <div class="flex items-center gap-2">
-                      <button class="quantity-btn w-6 h-6 flex items-center justify-center border border-zinc-300 dark:border-zinc-700 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors" data-product-id="${item.id}" data-action="decrease">
-                          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-center gap-1 text-xs text-slate-500 mt-1">
+                <span class="bg-slate-100 px-2 py-1 rounded-full">${item.purity}</span>
+                <span>CAS: ${item.cas}</span>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center gap-3">
+                      <button class="quantity-btn w-8 h-8 flex items-center justify-center border-2 border-slate-300 rounded-lg hover:bg-slate-100 hover:border-blue-400 transition-all duration-300" data-product-id="${item.id}" data-action="decrease">
+                          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                           </svg>
                       </button>
-                      <span class="text-sm font-medium w-8 text-center">${item.quantity}</span>
-                      <button class="quantity-btn w-6 h-6 flex items-center justify-center border border-zinc-300 dark:border-zinc-700 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors" data-product-id="${item.id}" data-action="increase">
-                          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <span class="text-lg font-bold w-8 text-center">${item.quantity}</span>
+                      <button class="quantity-btn w-8 h-8 flex items-center justify-center border-2 border-slate-300 rounded-lg hover:bg-slate-100 hover:border-blue-400 transition-all duration-300" data-product-id="${item.id}" data-action="increase">
+                          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                           </svg>
                       </button>
                   </div>
-                  <p class="text-sm font-semibold">€${(item.price * item.quantity).toFixed(2)}</p>
+                  <p class="text-lg font-bold text-blue-600">€${(item.price * item.quantity).toFixed(2)}</p>
               </div>
           </div>
       </div>
@@ -1202,7 +1477,7 @@ function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart))
 }
 
-// Checkout functionality
+// Enhanced Checkout functionality
 function setupCheckoutListeners() {
   document.getElementById("backToProducts").addEventListener("click", showProductSection)
   document.getElementById("proceedToAddress").addEventListener("click", () => showCheckoutStep(2))
@@ -1220,18 +1495,20 @@ function showCheckoutStep(step) {
   document.getElementById("checkoutStep2").classList.add("hidden")
   document.getElementById("checkoutStep3").classList.add("hidden")
 
-  // Show current step
-  document.getElementById(`checkoutStep${step}`).classList.remove("hidden")
+  // Show current step with animation
+  const currentStepElement = document.getElementById(`checkoutStep${step}`)
+  currentStepElement.classList.remove("hidden")
+  currentStepElement.style.animation = "fadeIn 0.4s ease-out"
 
   // Update step indicators
   for (let i = 1; i <= 3; i++) {
     const stepElement = document.getElementById(`step${i}`)
     if (i <= step) {
       stepElement.className =
-        "w-8 h-8 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full flex items-center justify-center text-sm font-medium"
+        "w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg"
     } else {
       stepElement.className =
-        "w-8 h-8 bg-zinc-300 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-400 rounded-full flex items-center justify-center text-sm font-medium"
+        "w-10 h-10 bg-slate-300 text-slate-600 rounded-full flex items-center justify-center text-sm font-bold"
     }
   }
 }
@@ -1243,24 +1520,34 @@ function renderCheckoutItems() {
   const checkoutTotal = document.getElementById("checkoutTotal")
 
   if (cart.length === 0) {
-    checkoutItems.innerHTML = '<p class="text-center text-zinc-500 dark:text-zinc-400">Ihr Warenkorb ist leer</p>'
+    checkoutItems.innerHTML = `
+      <div class="text-center py-8">
+        <p class="text-slate-500">Ihr Warenkorb ist leer</p>
+        <button onclick="showProductSection()" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
+          Zum Katalog
+        </button>
+      </div>
+    `
     return
   }
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
-  const shipping = subtotal >= 50 ? 0 : 4.99
+  const shipping = subtotal >= 100 ? 0 : 9.99
   const total = subtotal + shipping
 
   checkoutItems.innerHTML = cart
     .map(
       (item) => `
-      <div class="flex items-center gap-4 p-4 border border-zinc-200 dark:border-zinc-800 rounded-lg">
-          <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-md" />
+      <div class="flex items-center gap-4 p-6 border-2 border-slate-200 rounded-2xl hover:border-blue-300 transition-all duration-300">
+          <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-xl shadow-sm" />
           <div class="flex-1">
-              <h3 class="font-medium">${item.name}</h3>
-              <p class="text-sm text-zinc-600 dark:text-zinc-400">Menge: ${item.quantity}</p>
+              <h3 class="font-semibold text-slate-900">${item.name}</h3>
+              <div class="flex items-center gap-2 text-sm text-slate-500 mt-1">
+                <span class="bg-slate-100 px-2 py-1 rounded-full">${item.purity}</span>
+                <span>Menge: ${item.quantity}</span>
+              </div>
           </div>
-          <p class="font-semibold">€${(item.price * item.quantity).toFixed(2)}</p>
+          <p class="text-xl font-bold text-blue-600">€${(item.price * item.quantity).toFixed(2)}</p>
       </div>
     `,
     )
@@ -1272,43 +1559,96 @@ function renderCheckoutItems() {
 }
 
 function placeOrder() {
+  // Show loading state
+  const orderBtn = document.getElementById("placeOrder")
+  const originalText = orderBtn.innerHTML
+  orderBtn.innerHTML = `
+    <svg class="animate-spin w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Bestellung wird verarbeitet...
+  `
+  orderBtn.disabled = true
+
   // Simulate order processing
-  showToast("Bestellung wird verarbeitet...", "info")
+  showToast("🔄 Bestellung wird verarbeitet...", "info")
 
   setTimeout(() => {
+    // Generate order number
+    const orderNumber = "RC-" + Date.now().toString().slice(-6)
+
     // Clear cart
     cart = []
     updateCartBadge()
     saveCart()
 
+    // Reset button
+    orderBtn.innerHTML = originalText
+    orderBtn.disabled = false
+
     // Show success message
-    showToast("Bestellung erfolgreich aufgegeben! Sie erhalten eine Bestätigungs-E-Mail.", "success")
+    showToast(`🎉 Bestellung ${orderNumber} erfolgreich aufgegeben! Sie erhalten eine Bestätigungs-E-Mail.`, "success")
 
     // Redirect to products
     setTimeout(() => {
       showProductSection()
-    }, 2000)
-  }, 2000)
-}
-
-// Toast notifications
-function showToast(message, type = "info") {
-  const toast = document.createElement("div")
-  toast.className = `toast ${type}`
-  toast.textContent = message
-
-  document.body.appendChild(toast)
-
-  setTimeout(() => {
-    toast.style.opacity = "0"
-    toast.style.transform = "translateX(100%)"
-    setTimeout(() => {
-      document.body.removeChild(toast)
-    }, 300)
+    }, 3000)
   }, 3000)
 }
 
-// Footer functionality
+// Enhanced Toast notifications
+function showToast(message, type = "info") {
+  const toast = document.createElement("div")
+  toast.className = `fixed top-6 right-6 z-50 p-4 rounded-2xl shadow-2xl border max-w-sm transform transition-all duration-500 translate-x-full opacity-0`
+
+  // Style based on type
+  switch (type) {
+    case "success":
+      toast.classList.add("bg-green-50", "border-green-200", "text-green-800")
+      break
+    case "error":
+      toast.classList.add("bg-red-50", "border-red-200", "text-red-800")
+      break
+    case "warning":
+      toast.classList.add("bg-yellow-50", "border-yellow-200", "text-yellow-800")
+      break
+    default:
+      toast.classList.add("bg-blue-50", "border-blue-200", "text-blue-800")
+  }
+
+  toast.innerHTML = `
+    <div class="flex items-start gap-3">
+      <div class="flex-1">
+        <p class="text-sm font-medium leading-relaxed">${message}</p>
+      </div>
+      <button onclick="this.parentElement.parentElement.remove()" class="text-current opacity-50 hover:opacity-100 transition-opacity">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  `
+
+  document.body.appendChild(toast)
+
+  // Animate in
+  setTimeout(() => {
+    toast.classList.remove("translate-x-full", "opacity-0")
+  }, 100)
+
+  // Auto remove
+  setTimeout(() => {
+    toast.classList.add("translate-x-full", "opacity-0")
+    setTimeout(() => {
+      if (document.body.contains(toast)) {
+        document.body.removeChild(toast)
+      }
+    }, 500)
+  }, 5000)
+}
+
+// Enhanced Footer functionality
 function setupFooter() {
   // Newsletter subscription
   const newsletterForm = document.querySelector(".newsletter-input-group")
@@ -1321,52 +1661,69 @@ function setupFooter() {
       const email = emailInput.value.trim()
 
       if (email && isValidEmail(email)) {
-        // Simulate newsletter subscription
+        // Show loading state
+        const originalText = subscribeBtn.innerHTML
         subscribeBtn.innerHTML = `
-          <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <svg class="animate-spin w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
           </svg>
-          Abonniert!
+          Abonnieren...
         `
-        subscribeBtn.classList.add("bg-green-600", "hover:bg-green-700")
-        subscribeBtn.classList.remove("bg-zinc-900", "hover:bg-zinc-800")
 
+        // Simulate subscription
         setTimeout(() => {
-          emailInput.value = ""
           subscribeBtn.innerHTML = `
-            <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            Abonnieren
+            Abonniert!
           `
-          subscribeBtn.classList.remove("bg-green-600", "hover:bg-green-700")
-          subscribeBtn.classList.add("bg-zinc-900", "hover:bg-zinc-800")
-        }, 2000)
+          subscribeBtn.classList.remove("from-blue-600", "to-blue-700", "hover:from-blue-700", "hover:to-blue-800")
+          subscribeBtn.classList.add("from-green-600", "to-green-700")
+
+          showToast("📧 Newsletter erfolgreich abonniert!", "success")
+
+          setTimeout(() => {
+            emailInput.value = ""
+            subscribeBtn.innerHTML = originalText
+            subscribeBtn.classList.add("from-blue-600", "to-blue-700", "hover:from-blue-700", "hover:to-blue-800")
+            subscribeBtn.classList.remove("from-green-600", "to-green-700")
+          }, 3000)
+        }, 1500)
       } else {
         // Show error animation
         emailInput.classList.add("border-red-500", "animate-pulse")
+        showToast("⚠️ Bitte geben Sie eine gültige E-Mail-Adresse ein.", "error")
         setTimeout(() => {
           emailInput.classList.remove("border-red-500", "animate-pulse")
-        }, 1000)
+        }, 2000)
+      }
+    })
+
+    // Enter key support
+    emailInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        subscribeBtn.click()
       }
     })
   }
 
-  // Social media hover effects
+  // Enhanced social media hover effects
   document.querySelectorAll(".social-icon").forEach((icon) => {
     icon.addEventListener("mouseenter", () => {
-      icon.style.transform = "translateY(-2px) scale(1.1)"
+      icon.style.transform = "translateY(-4px) scale(1.15) rotate(5deg)"
     })
 
     icon.addEventListener("mouseleave", () => {
-      icon.style.transform = "translateY(0) scale(1)"
+      icon.style.transform = "translateY(0) scale(1) rotate(0deg)"
     })
   })
 
-  // Footer links hover effects
+  // Enhanced footer links hover effects
   document.querySelectorAll(".footer-link").forEach((link) => {
     link.addEventListener("mouseenter", () => {
-      link.style.transform = "translateX(4px)"
+      link.style.transform = "translateX(6px)"
     })
 
     link.addEventListener("mouseleave", () => {
